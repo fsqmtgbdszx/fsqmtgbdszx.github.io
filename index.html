@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>測試用途</title>
+</head>
+      <body style="background-image: url('背景圖/背景圖.jpg'); 
+             background-size: cover; 
+             background-repeat: no-repeat; 
+             background-attachment: fixed;">
+
+ <p style="text-align:center; 
+              font-size:100px; 
+              margin: 0;">网页测试</p>
+
+
+       <style>
+        /* 整個畫面置中 */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        /* 按鈕樣式 */
+        button {
+            font-size: 24px;
+            padding: 20px 40px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff5a5a;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 音頻 -->
+    <audio id="audio" src="SB666/91.mp3"></audio>
+
+    <!-- 按鈕 -->
+    <button onclick="playAudio()">带派不老铁</button>
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
